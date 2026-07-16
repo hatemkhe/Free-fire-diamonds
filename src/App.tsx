@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+// تعديل مسار الاستيراد لضمان التوافق الكامل مع حزمة framer-motion على خوادم الاستضافة
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Gamepad2, 
   Coins, 
@@ -373,10 +374,10 @@ export default function App() {
           >
             <div className={`p-4 rounded-xl border shadow-xl text-right flex gap-2.5 items-start ${
               toast.type === 'success' 
-                ? 'bg-emerald-950/95 border-emerald-500 text-emerald-400 neon-border-green' 
+                ? 'bg-emerald-950/95 border-emerald-500 text-emerald-400' 
                 : toast.type === 'warning'
-                ? 'bg-amber-950/95 border-amber-500 text-amber-400 neon-border-rose'
-                : 'bg-rose-950/95 border-rose-500 text-rose-400 neon-border-rose'
+                ? 'bg-amber-950/95 border-amber-500 text-amber-400'
+                : 'bg-rose-950/95 border-rose-500 text-rose-400'
             }`}>
               {toast.type === 'success' && <Sparkles className="h-5 w-5 shrink-0 mt-0.5 animate-pulse" />}
               {toast.type === 'warning' && <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 animate-pulse" />}
