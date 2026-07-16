@@ -1,0 +1,6 @@
+{
+  "name": "منصة شحن جواهر فري فاير - جمع النقاط",
+  "description": "منصة تفاعلية ترفيهية لجمع النقاط عبر 10 ألعاب مشوقة واستبدالها بجوائز ألعاب مثل جواهر فري فاير مع تصميم متجاوب وعصري.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
